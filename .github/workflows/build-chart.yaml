@@ -12,5 +12,7 @@ jobs:
 
       - name: Build Helm Chart
         run: |
-          ls -la .
           pwd
+          helm package .
+          mv ejbca-community-helm*tgz docs/
+          ls -la docs
