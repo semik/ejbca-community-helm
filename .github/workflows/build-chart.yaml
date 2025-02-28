@@ -12,5 +12,5 @@ jobs:
 
       - name: Build Helm Chart
         run:
-          ls -la . \
+          ls -la .
           pwd
