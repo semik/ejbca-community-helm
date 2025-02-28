@@ -17,6 +17,7 @@ jobs:
           mv ejbca-community-helm*tgz docs/
           git config --global user.email "jan+githubaction@tomasek.cz"
           git config --global user.name "GA behalf of Jan Tomasek"
+          git add -A
           git commit -a -m "Automatic build"
           ls -la docs
 
