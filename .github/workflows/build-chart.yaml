@@ -19,6 +19,7 @@ jobs:
           git config --global user.name "GA behalf of Jan Tomasek"
           git add -A
           git commit -a -m "Automatic build"
+          git status
           ls -la docs
 
       - name: Push changes
