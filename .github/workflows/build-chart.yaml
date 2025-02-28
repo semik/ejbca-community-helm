@@ -15,4 +15,8 @@ jobs:
           pwd
           helm package .
           mv ejbca-community-helm*tgz docs/
+          git commit -a -m "Automatic build"
           ls -la docs
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
